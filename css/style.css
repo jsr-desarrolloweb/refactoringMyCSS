@@ -40,6 +40,19 @@ a {
     text-decoration: none;
 }
 
+button {
+    border: none;
+    background-color: var(--orange-bt);
+    height: 50px;
+    width: 90%;
+    border-radius: 2px;
+    box-shadow: var(--sombra);
+    margin: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -103,4 +116,73 @@ header {
     .burger {
         display: block;
     }
+}
+
+
+/* -------FOOTER-------- */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 100px;
+    width: 100%;
+    background-color: #2E282A;
+}
+
+footer h3 {
+    letter-spacing: 2px;
+    font-size: 1.5rem;
+    color: #E4572E;
+    text-shadow: var(--sombra);
+}
+
+footer i {
+    color: #E4572E;
+    font-size: 1.5rem;
+    padding: 0px 5px;
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        align-items: center;
+        flex-direction: column;
+    }
+    i {
+        margin-top: 3px;
+    }
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 0;
+    width: 75%;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.section-title h1 {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-shadow: var(--sombra);
+}
+
+.separator {
+    margin-top: 40px;
+    background-color: #E4572E;
+    width: 120px;
+    height: 3px;
 }

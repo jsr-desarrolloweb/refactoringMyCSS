@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>B E T T E' S</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/tipsters.css">
+    <link rel="stylesheet" href="css/register.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
 </head>
@@ -19,7 +19,7 @@
         <nav>
             <ul class="nav-links">
                 <li>
-                    <a href="">Tipsters</a>
+                    <a href="tipsters.html">Tipsters</a>
                 </li>
                 <li>
                     <a href="">Estadísticas</a>
@@ -42,56 +42,29 @@
         </div>
     </header>
 
-
     <main>
-
-        <section>
+        <section class="section-register">
             <div class="section-title">
-
-                <h1>TIPSTERS</h1>
-                <p>Nuestros mejores pronosticadores</p>
+                <h1>REGISTRO</h1>
                 <div class="separator"></div>
             </div>
+            <form id="form-register" action="">
+                <!-- <i class="fas fa-user-circle"></i> -->
+                <input type="text" placeholder="Nombre de usuario" required>
+                <div>
+                    <!-- <i class="fas fa-key"></i> -->
+                    <input type="password" placeholder="Contraseña" required>
+                    <!-- <i class="fas fa-key"></i> -->
+                    <input type="password" placeholder="Confirmar" required>
+                </div>
+                <!-- <i class="fas fa-envelope"></i> -->
+                <input type="email" placeholder="Email">
+                <button type="submit">Registrar</button>
+            </form>
+            <p>¿Registrado?<strong> <a href="" style="color: black;">Inicia sesión</a> </strong></p>
 
-
-            <div class="tipster-cards">
-                <div class="card">
-                    <img src="img/foto-tipster.jpg" alt="">
-                    <span>@username</span>
-                    <button>Ver perfil</button>
-                </div>
-                <div class="card">
-                    <img src="img/foto-tipster2.jpg" alt="">
-                    <span>@username</span>
-                    <button>Ver perfil</button>
-                </div>
-                <div class="card">
-                    <img src="img/foto-tipster3.jpg" alt="">
-                    <span>@username</span>
-                    <button>Ver perfil</button>
-                </div>
-                <div class="card">
-                    <img src="img/foto-tipster4.jpg" alt="">
-                    <span>@username</span>
-                    <button>Ver perfil</button>
-                </div>
-                <div class="card">
-                    <img src="img/foto-tipster5.jpg" alt="">
-                    <span>@username</span>
-                    <button>Ver perfil</button>
-                </div>
-                <div class="card">
-                    <img src="img/foto-tipster6.jpg" alt="">
-                    <span>@username</span>
-                    <button>Ver perfil</button>
-                </div>
-
-
-
-            </div>
 
         </section>
-
 
     </main>
 
@@ -103,8 +76,6 @@
             <a href=""><i class="fab fa-facebook icono-naranja"></i></a>
         </div>
     </footer>
-
-
 
 </body>
 
