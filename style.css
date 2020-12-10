@@ -1,0 +1,73 @@
+/*IMPORTACIÓN DE FUENTES*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,100;1,300;1,400;1,700;1,900&display=swap');
+@font-face {
+    font-family: "Mystery Quest";
+    src: url("/assets/fonts/Anurati-Regular.otf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'san-serif';
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #FFC914;
+}
+
+.logo a {
+    font-size: 2.5rem;
+    font-family: 'Anurati';
+    color: black;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links li {
+    margin: 0px 10px;
+    color: black;
+}
+
+.nav-links a {
+    color: black;
+}
+
+.burger {
+    cursor: pointer;
+    display: none;
+}
+
+.burger div {
+    background-color: black;
+    width: 20px;
+    height: 3px;
+    margin: 3px 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+    }
+    .burger {
+        display: block;
+    }
+}
