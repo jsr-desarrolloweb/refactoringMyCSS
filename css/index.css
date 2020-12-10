@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--orange-bt);
+    width: 100%;
+}
+
+main h1 {
+    font-size: 6rem;
+    text-shadow: var(--sombra);
+    letter-spacing: 3px;
+}
+
+main span {
+    font-size: 1.7rem;
+}
+
+main a {
+    text-align: center;
+    color: black;
+    background-color: var(--yellow-bt);
+    border-radius: 2px;
+    padding: 15px;
+    width: 15%;
+    margin: 20px;
+    font-weight: 800;
+    box-shadow: var(--sombra);
+    letter-spacing: 1px;
+}
