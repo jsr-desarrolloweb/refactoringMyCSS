@@ -6,6 +6,22 @@
     src: url("/assets/fonts/Anurati-Regular.otf");
 }
 
+
+/* VARIABLES CSS  */
+
+
+/* -------------VARIABLES CSS -------------------*/
+
+:root {
+    --orange-bt: #E4572E;
+    --yellow-bt: #FFC914;
+    --black-bt: #2E282A;
+    --sombra: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+/* ESTILOS GENERALES */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +36,11 @@ a {
 body {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
+
+/* HEADER: LOGO, NAVBAR Y BURGER */
 
 header {
     display: flex;
@@ -28,12 +48,14 @@ header {
     align-items: center;
     height: 8vh;
     background-color: #FFC914;
+    width: 100%;
 }
 
 .logo a {
     font-size: 2.5rem;
     font-family: 'Anurati';
     color: black;
+    text-shadow: var(--sombra);
 }
 
 .nav-links {
@@ -49,6 +71,10 @@ header {
 
 .nav-links a {
     color: black;
+}
+
+.nav-links a:hover {
+    text-shadow: var(--sombra);
 }
 
 .burger {
@@ -70,4 +96,32 @@ header {
     .burger {
         display: block;
     }
+}
+
+
+/* MAIN: Sections: Tipsters */
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-tipsters {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 0;
+    width: 75%;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-title h1 {
+    font-family: 'anurati';
+    letter-spacing: 3px;
 }
