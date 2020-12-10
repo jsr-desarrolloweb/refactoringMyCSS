@@ -24,9 +24,21 @@ main a {
     background-color: var(--yellow-bt);
     border-radius: 2px;
     padding: 15px;
-    width: 15%;
+    width: 200px;
     margin: 20px;
     font-weight: 800;
     box-shadow: var(--sombra);
     letter-spacing: 1px;
+}
+
+@media screen and (max-width: 600px) {
+    main h1 {
+        width: 15px;
+        word-wrap: break-word;
+        text-align: center;
+        font-size: 4rem;
+    }
+    main span {
+        display: none;
+    }
 }
