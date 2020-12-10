@@ -31,6 +31,10 @@ main a {
     letter-spacing: 1px;
 }
 
+main a:hover {
+    background-color: var(--blue-bt);
+}
+
 @media screen and (max-width: 600px) {
     main h1 {
         width: 15px;

@@ -16,6 +16,7 @@
     --orange-bt: #E4572E;
     --yellow-bt: #FFC914;
     --black-bt: #2E282A;
+    --blue-bt: #17BEBB;
     --sombra: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
@@ -51,6 +52,10 @@ button {
     font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--blue-bt);
 }
 
 body {
@@ -100,6 +105,8 @@ header {
 .burger {
     cursor: pointer;
     display: none;
+    padding: 3px;
+    border-radius: 2px;
 }
 
 .burger div {
@@ -107,6 +114,10 @@ header {
     width: 20px;
     height: 3px;
     margin: 3px 0px;
+}
+
+.burger:hover {
+    background-color: wheat;
 }
 
 @media screen and (max-width: 600px) {
