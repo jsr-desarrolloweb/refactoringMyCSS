@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B E T T E' S</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/images.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">B</a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li>
+                    <a href="tipsters.html">Tipsters</a>
+                </li>
+                <li>
+                    <a href="">Estadísticas</a>
+                </li>
+                <li>
+                    <a href="">Tutoriales</a>
+                </li>
+                <li>
+                    <a href="">Nosotros</a>
+                </li>
+                <li>
+                    <a href="images.html">Imágenes</a>
+                </li>
+                <li>
+                    <a href="register.html">Personal</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section>
+            <div class="section-title">
+
+                <h1>I MAGENES</h1>
+                <p>Fotografías de nuestros eventos</p>
+                <div class="separator"></div>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-images">
+                <picture>
+                    <source media="(min-width:650px)" srcset="img/img0_600w.jpg">
+                    <source media="(min-width:465px)" srcset="img/img0_400w.jpg">
+                    <img src="img/img0_300w.jpg" alt="Flowers" ">
+                </picture>
+
+                <picture>
+                    <source media="(min-width:650px) " srcset="img/img1_600w.jpg ">
+                    <source media="(min-width:465px) " srcset="img/img1_400w.jpg ">
+                    <img src="img/img1_300w.jpg " alt="Flowers " ">
+                </picture>
+
+
+                <picture>
+                    <source media="(min-width:650px) " srcset="img/img2_600w.jpg ">
+                    <source media="(min-width:465px) " srcset="img/img2_400w.jpg ">
+                    <img src="img/img2_300w.jpg " alt="Flowers " ">
+                </picture>
+
+                
+                <picture>
+                    <source media="(min-width:650px) " srcset="img/img3_600w.jpg ">
+                    <source media="(min-width:465px) " srcset="img/img3_400w.jpg ">
+                    <img src="img/img3_300w.jpg " alt="Flowers " ">
+                </picture>
+            </div>
+        </section>
+
+        <section>
+            <div class="section-slider">
+                <div class="w3-content w3-display-container">
+
+                    <div class="w3-display-container mySlides">
+                        <img src="img/foto-tipster.jpg" style="width:100%">
+                        <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+                            Álvaro Piccolo
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container mySlides">
+                        <img src="img/foto-tipster2.jpg" style="width:100%">
+                        <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                            Samara Azuro
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container mySlides">
+                        <img src="img/foto-tipster3.jpg" style="width:100%">
+                        <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+                            Belén Ciutto
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container mySlides">
+                        <img src="img/foto-tipster4.jpg" style="width:100%">
+                        <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+                            Paco Seefood
+                        </div>
+                    </div>
+
+                    <div class="w3-display-container mySlides">
+                        <img src="img/foto-tipster5.jpg" style="width:100%">
+                        <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+                            Triana Pura
+                        </div>
+                    </div>
+
+
+                    <button class="w3-button w3-display-left w3-black btn-slider" onclick="plusDivs(-1)">&#10094;
+                    </button>
+                    <button class="w3-button w3-display-right w3-black btn-slider" onclick="plusDivs(1)">&#10095;</button>
+
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <h3>BETTE'S</h3>
+        <div class="rrss ">
+            <a href=" "><i class="fab fa-twitter icono-naranja "></i></a>
+            <a href=" "><i class="fab fa-instagram icono-naranja "></i></a>
+            <a href=" "><i class="fab fa-facebook icono-naranja "></i></a>
+        </div>
+    </footer>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = x.length
+            }
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            x[slideIndex - 1].style.display = "block";
+        }
+    </script>
+
+
+
+</body>
+
+</html>
