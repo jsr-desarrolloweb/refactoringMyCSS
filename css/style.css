@@ -7,9 +7,6 @@
 }
 
 
-/* VARIABLES CSS  */
-
-
 /* -------------VARIABLES CSS -------------------*/
 
 :root {
@@ -65,7 +62,7 @@ body {
 }
 
 
-/* HEADER: LOGO, NAVBAR Y BURGER */
+/* ------------HEADER: LOGO, NAVBAR Y BURGER ---------*/
 
 header {
     display: flex;
@@ -76,12 +73,18 @@ header {
     width: 100%;
 }
 
+
+/* LOGO */
+
 .logo a {
     font-size: 2.5rem;
     font-family: 'Anurati';
     color: black;
     text-shadow: var(--sombra);
 }
+
+
+/* BARRA DE NAVEGACION */
 
 .nav-links {
     list-style: none;
@@ -101,6 +104,9 @@ header {
 .nav-links a:hover {
     text-shadow: var(--sombra);
 }
+
+
+/* BURGER CREADO PARA DESPLEGAR EL MENU EN VERSION MOBILE */
 
 .burger {
     cursor: pointer;
@@ -162,6 +168,9 @@ footer i {
         margin-top: 3px;
     }
 }
+
+
+/* CLASES GENERALES */
 
 main {
     width: 100%;

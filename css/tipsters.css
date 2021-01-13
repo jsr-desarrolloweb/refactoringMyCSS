@@ -1,10 +1,16 @@
 /* MAIN: Sections: Tipsters, Cards */
 
+
+/* Creamos la seccion de las cartas */
+
 .tipster-cards {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+
+/* CARTA (foto, nombre, ver perfil) */
 
 .card {
     display: flex;

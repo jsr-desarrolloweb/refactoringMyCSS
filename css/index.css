@@ -35,6 +35,9 @@ main a:hover {
     background-color: var(--blue-bt);
 }
 
+
+/* TITULO VERTICAL para pantallas moviles */
+
 @media screen and (max-width: 600px) {
     main h1 {
         width: 15px;
@@ -42,6 +45,7 @@ main a:hover {
         text-align: center;
         font-size: 4rem;
     }
+    /* QUITAMOS LA DESCRIPCION PARA CONSEGUIR UNA PANTALLA DE INICIO CLARA */
     main span {
         display: none;
     }
